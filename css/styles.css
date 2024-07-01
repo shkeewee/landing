@@ -16,6 +16,7 @@ body {
     display: flex;
     justify-content: flex-end; /* Align items to the right */
     align-items: center;
+    padding: 0 20px; /* Padding for small screens */
 }
 
 .hero .container {
@@ -124,4 +125,30 @@ footer {
     color: #FFFFFF; /* White */
     padding: 20px 0;
     text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero .container {
+        max-width: 100%; /* Full width for small screens */
+        text-align: center; /* Center text on small screens */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .hero h1 {
+        font-size: 2.5em; /* Adjust font size for small screens */
+    }
+
+    .hero .lead {
+        font-size: 1.2em; /* Adjust font size for small screens */
+    }
+
+    .hero .btn {
+        font-size: 1em; /* Adjust font size for small screens */
+        padding: 8px 16px; /* Adjust padding for small screens */
+    }
+
+    .countdown {
+        font-size: 1.5em; /* Adjust countdown size for small screens */
+    }
 }
