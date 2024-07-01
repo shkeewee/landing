@@ -29,12 +29,6 @@ body {
     margin-bottom: 20px;
 }
 
-.hero h2 {
-    font-size: 2.6em; /* Added subtitle with appropriate size */
-    margin-bottom: 20px;
-    font-weight: 400; /* Slightly less bold for subtitle */
-}
-
 .hero .lead {
     color: #FFD700; /* Gold for better contrast */
     font-size: 1.95em; /* Increased by 30% */
@@ -56,8 +50,10 @@ body {
 }
 
 .countdown {
-    font-size: 1.5em;
+    font-size: 2em; /* Increased size */
+    color: #FFD700; /* Gold color for better contrast */
     margin-top: 20px;
+    font-weight: bold;
 }
 
 section {
