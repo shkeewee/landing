@@ -33,8 +33,8 @@
         <div class="container text-center">
             <h2>Invited Speakers</h2>
             <p>We are honored to welcome a distinguished faculty of experts in the fields of sleep medicine and obstructive lung disease. Our speakers are renowned for their groundbreaking research, clinical expertise, and dedication to advancing medical knowledge. Don't miss the opportunity to learn from and network with these thought leaders!</p>
-            <a href="#sleep-medicine-speakers" class="btn btn-lg btn-primary mt-3">Sleep Medicine Speakers</a>
-            <a href="#obstructive-lung-disease-speakers" class="btn btn-lg btn-primary mt-3">Obstructive Lung Disease Speakers</a>
+            <a href="sleep-medicine-speakers.html" class="btn btn-lg btn-primary mt-3">Sleep Medicine Speakers</a>
+            <a href="obstructive-lung-disease-speakers.html" class="btn btn-lg btn-primary mt-3">Obstructive Lung Disease Speakers</a>
         </div>
     </section>
 
@@ -59,7 +59,6 @@
                     <p>Poster presentations, closing ceremony, and farewell dinner.</p>
                     <a href="schedule-day3.html" class="btn btn-primary">Detailed Schedule</a>
                 </div>
-            </div
             </div>
         </div>
     </section>
@@ -167,20 +166,173 @@
 
             // Time calculations for days, hours, minutes and seconds
             var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            var hours = Math.floor((distance % (1000 *
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breathe and Dream Conference</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <h1 class="display-4">Breathe and Dream Conference</h1>
+            <p class="lead">October 17-19, 2024 | Golden Tulip, Cluj-Napoca, Romania</p>
+            <p class="lead">Join us for three days of innovation, collaboration, and discovery!</p>
+            <div class="countdown" id="countdown"></div>
+            <a href="#registration" class="btn btn-lg">Register Now</a>
+        </div>
+    </section>
 
-            // Display the result in the element with id="countdown"
-            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-            + minutes + "m " + seconds + "s ";
+    <!-- About the Event -->
+    <section class="about py-5" id="about">
+        <div class="container text-center">
+            <h2>About the Event</h2>
+            <p>Welcome to the Breathe and Dream Conference, the ultimate gathering for professionals passionate about advancing the fields of obstructive lung diseases and sleep disorders. Join us from October 17-19, 2024, at the luxurious Golden Tulip in Cluj-Napoca, Romania. This three-day event offers a unique opportunity to connect with leading experts, explore cutting-edge research, and participate in dynamic discussions that will shape the future of respiratory and sleep health.</p>
+            <p>Immerse yourself in an environment designed for innovation and collaboration, with keynote speeches, interactive workshops, and networking sessions tailored to enhance your professional growth. Don’t miss out on this chance to elevate your expertise, exchange ideas, and make meaningful connections with peers and pioneers in the field. Together, we can breathe new life into our practices and dream big for the future of healthcare.</p>
+        </div>
+    </section>
 
-            // If the count down is over, write some text 
-            if (distance < 0) {
-                clearInterval(x);
-                document.getElementById("countdown").innerHTML = "EXPIRED";
-            }
-        }, 1000);
-    </script>
-</body>
-</html>
+    <!-- Invited Speakers -->
+    <section class="speakers py-5 bg-light" id="speakers">
+        <div class="container text-center">
+            <h2>Invited Speakers</h2>
+            <p>We are honored to welcome a distinguished faculty of experts in the fields of sleep medicine and obstructive lung disease. Our speakers are renowned for their groundbreaking research, clinical expertise, and dedication to advancing medical knowledge. Don't miss the opportunity to learn from and network with these thought leaders!</p>
+            <a href="sleep-medicine-speakers.html" class="btn btn-lg btn-primary mt-3">Sleep Medicine Speakers</a>
+            <a href="obstructive-lung-disease-speakers.html" class="btn btn-lg btn-primary mt-3">Obstructive Lung Disease Speakers</a>
+        </div>
+    </section>
+
+    <!-- Schedule -->
+    <section class="schedule py-5" id="schedule">
+        <div class="container text-center">
+            <h2>Schedule</h2>
+            <p>Our carefully curated schedule is designed to maximize your learning and networking opportunities. Here's a sneak peek of what you can expect:</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>Day 1</h3>
+                    <p>Keynote speeches, panel discussions, and welcome reception.</p>
+                    <a href="schedule-day1.html" class="btn btn-primary">Detailed Schedule</a>
+                </div>
+                <div class="col-md-4">
+                    <h3>Day 2</h3>
+                    <p>Breakout sessions, hands-on workshops, and networking lunch.</p>
+                    <a href="schedule-day2.html" class="btn btn-primary">Detailed Schedule</a>
+                </div>
+                <div class="col-md-4">
+                    <h3>Day 3</h3>
+                    <p>Poster presentations, closing ceremony, and farewell dinner.</p>
+                    <a href="schedule-day3.html" class="btn btn-primary">Detailed Schedule</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration -->
+    <section class="registration py-5" id="registration">
+        <div class="container text-center">
+            <h2>Registration</h2>
+            <p>Secure your spot at the Breathe and Dream Conference today! Registration is quick and easy:</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="registration-box">
+                        <h3>Early Bird Registration</h3>
+                        <p>Available until August 31, 2024. Enjoy discounted rates!</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="registration-box">
+                        <h3>Standard Registration</h3>
+                        <p>Open from September 1 to October 10, 2024.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="registration-box">
+                        <h3>On-site Registration</h3>
+                        <p>Available on event days, subject to availability.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#registration-form" class="btn btn-lg btn-primary mt-4">Register Now</a>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="registration-form py-5" id="registration-form">
+        <div class="container text-center">
+            <h2>Register Now</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" id="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" id="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <select class="form-control" id="registration-type" required>
+                            <option value="" disabled selected>Select Registration Type</option>
+                            <option value="early-bird">Early Bird Registration</option>
+                            <option value="standard">Standard Registration</option>
+                            <option value="on-site">On-site Registration</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-lg btn-primary">Submit Registration</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact py-5" id="contact">
+        <div class="container text-center">
+            <h2>Contact</h2>
+            <p>Have questions or need more information? We're here to help!</p>
+            <p>Email us at <a href="mailto:info@breatheanddreamconference.com">info@breatheanddreamconference.com</a> or call us at +123-456-7890.</p>
+            <p>Follow us on social media to stay updated:</p>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Facebook</a></li>
+                <li class="list-inline-item"><a href="#">Twitter</a></li>
+                <li class="list-inline-item"><a href="#">LinkedIn</a></li>
+            </ul>
+            <p>We look forward to welcoming you to the Breathe and Dream Conference!</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 text-center">
+        <div class="container">
+            <p>&copy; 2024 Breathe and Dream Conference. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Countdown Timer Script -->
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Oct 17, 2024 09:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 *
