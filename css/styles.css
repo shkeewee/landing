@@ -38,8 +38,8 @@ body {
 }
 
 .hero .btn {
-    background-color: #FFD700; /* Gold */
-    color: #2A2A32; /* Dark Blue */
+    background-color: #FFD700 !important; /* Gold */
+    color: #2A2A32 !important; /* Dark Blue */
     border: none;
     padding: 10px 20px;
     font-size: 1.56em; /* Increased by 30% */
@@ -47,8 +47,8 @@ body {
 }
 
 .hero .btn:hover {
-    background-color: #2A2A32; /* Dark Blue */
-    color: #FFD700; /* Gold */
+    background-color: #2A2A32 !important; /* Dark Blue */
+    color: #FFD700 !important; /* Gold */
 }
 
 .countdown {
@@ -122,28 +122,22 @@ section h3 {
     color: #2A2A32;
 }
 
-.btn-primary {
-    background-color: #FFD700; /* Gold */
-    color: #2A2A32; /* Dark Blue */
+.btn-primary,
+.registration .btn,
+.registration-form .btn,
+.contact .btn {
+    background-color: #FFD700 !important; /* Gold */
+    color: #2A2A32 !important; /* Dark Blue */
     border: none;
     transition: background-color 0.3s, color 0.3s;
 }
 
-.btn-primary:hover {
-    background-color: #2A2A32; /* Dark Blue */
-    color: #FFD700; /* Gold */
-}
-
-.registration .btn, .registration-form .btn, .contact .btn {
-    background-color: #FFD700; /* Gold */
-    color: #2A2A32; /* Dark Blue */
-    border: none;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.registration .btn:hover, .registration-form .btn:hover, .contact .btn:hover {
-    background-color: #2A2A32; /* Dark Blue */
-    color: #FFD700; /* Gold */
+.btn-primary:hover,
+.registration .btn:hover,
+.registration-form .btn:hover,
+.contact .btn:hover {
+    background-color: #2A2A32 !important; /* Dark Blue */
+    color: #FFD700 !important; /* Gold */
 }
 
 /* Responsive styles */
