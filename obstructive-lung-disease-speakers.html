@@ -6,14 +6,137 @@
     <title>Obstructive Lung Disease Speakers - Breathe and Dream Conference</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .speaker {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .speaker img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .bio {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <section class="speakers py-5" id="obstructive-lung-disease-speakers">
         <div class="container text-center">
             <h2>Obstructive Lung Disease Speakers</h2>
             <p>Meet the leading experts in obstructive lung disease who will be speaking at our conference.</p>
-            <!-- Add speaker details here -->
+
+            <h3>International Speakers</h3>
+            <div class="row">
+                <div class="col-md-4 speaker" data-bio="bio-ivan">
+                    <img src="images/ivan-kopitovic.jpg" alt="Ivan Kopitovic">
+                    <p>Ivan Kopitovic<br>Novi Sad, Serbia</p>
+                    <p class="bio" id="bio-ivan">Ivan Kopitovic is a renowned pulmonologist from Novi Sad, Serbia. His research focuses on innovative treatments for obstructive lung diseases. He is affiliated with the University of Novi Sad.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-celine">
+                    <img src="images/celine-mascaux.jpg" alt="Celine Mascaux">
+                    <p>Celine Mascaux<br>Bruxelles, France</p>
+                    <p class="bio" id="bio-celine">Celine Mascaux is a prominent pulmonologist from Brussels, France. Her expertise lies in advanced diagnostic techniques for lung diseases. She is affiliated with Université libre de Bruxelles.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-cezar">
+                    <img src="images/cezar-matau.jpg" alt="Cezar Matau">
+                    <p>Cezar Matau<br>Location</p>
+                    <p class="bio" id="bio-cezar">Cezar Matau is a leading expert in pulmonology with a focus on chronic obstructive pulmonary disease. His work has significantly impacted treatment protocols globally.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-alexandru">
+                    <img src="images/alexandru-corlateanu.jpg" alt="Alexandru Corlateanu">
+                    <p>Alexandru Corlateanu<br>Chișinău</p>
+                    <p class="bio" id="bio-alexandru">Alexandru Corlateanu is a distinguished pulmonologist based in Chișinău. He specializes in respiratory diseases and works at the State University of Medicine and Pharmacy "Nicolae Testemițanu".</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-sebastian">
+                    <img src="images/sebastian-majewski.jpg" alt="Sebastian Majewski">
+                    <p>Sebastian Majewski<br>Lodz, Poland</p>
+                    <p class="bio" id="bio-sebastian">Sebastian Majewski, from Lodz, Poland, is known for his research on obstructive lung diseases and innovative therapeutic approaches. He is affiliated with the Medical University of Lodz.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-ondrej">
+                    <img src="images/ondrej-fibigr.jpg" alt="Ondrej Fibigr">
+                    <p>Ondrej Fibigr<br>Plzen, Czech Republic</p>
+                    <p class="bio" id="bio-ondrej">Ondrej Fibigr is a leading pulmonologist from Plzen, Czech Republic. His research focuses on the early detection and treatment of obstructive lung diseases. He is affiliated with Charles University.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-janos">
+                    <img src="images/janos-varga.jpg" alt="Janos Varga">
+                    <p>Janos Varga<br>Budapest, Hungary</p>
+                    <p class="bio" id="bio-janos">Janos Varga is a pulmonologist from Budapest, Hungary, known for his pioneering work in lung disease treatments. He is affiliated with Semmelweis University.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-piotr">
+                    <img src="images/piotr.jpg" alt="Piotr">
+                    <p>Piotr<br>Location</p>
+                    <p class="bio" id="bio-piotr">Piotr is a highly respected pulmonologist with extensive experience in managing obstructive lung diseases. His work has contributed to significant advancements in the field.</p>
+                </div>
+            </div>
+
+            <h3>Romanian Speakers</h3>
+            <div class="row">
+                <div class="col-md-4 speaker" data-bio="bio-radu">
+                    <img src="images/radu-crisan-dabija.jpg" alt="Radu Crisan Dabija">
+                    <p>Radu Crisan Dabija<br>Iasi, Romania</p>
+                    <p class="bio" id="bio-radu">Radu Crisan Dabija is a leading pulmonologist from Iasi, Romania, specializing in the treatment of chronic obstructive pulmonary disease. He is affiliated with the Grigore T. Popa University of Medicine and Pharmacy.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-cristi">
+                    <img src="images/cristi-oancea.jpg" alt="Cristi Oancea">
+                    <p>Cristi Oancea<br>Timisoara, Romania</p>
+                    <p class="bio" id="bio-cristi">Cristi Oancea is a renowned pulmonologist based in Timisoara, Romania. He is known for his research in respiratory medicine and is affiliated with the Victor Babes University of Medicine and Pharmacy.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-costi">
+                    <img src="images/costi-streba.jpg" alt="Costi Streba">
+                    <p>Costi Streba<br>Craiova, Romania</p>
+                    <p class="bio" id="bio-costi">Costi Streba is a respected pulmonologist from Craiova, Romania. His work focuses on improving treatments for obstructive lung diseases. He is affiliated with the University of Medicine and Pharmacy of Craiova.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-corina">
+                    <img src="images/corina-budin.jpg" alt="Corina Budin">
+                    <p>Corina Budin<br>Tirgu Mures, Romania</p>
+                    <p class="bio" id="bio-corina">Corina Budin is a leading pulmonologist in Tirgu Mures, Romania, with a focus on innovative treatments for lung diseases. She is affiliated with the University of Medicine, Pharmacy, Science and Technology of Targu Mures.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-ciprian">
+                    <img src="images/ciprian-sturz.jpg" alt="Ciprian Sturz">
+                    <p>Ciprian Sturz<br>Cluj-Napoca, Romania</p>
+                    <p class="bio" id="bio-ciprian">Ciprian Sturz is a pulmonologist from Cluj-Napoca, Romania. His research in obstructive lung diseases has gained international recognition. He is affiliated with the Iuliu Hatieganu University of Medicine and Pharmacy.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-anca">
+                    <img src="images/anca-jager.jpg" alt="Anca Jager">
+                    <p>Anca Jager<br>Cluj-Napoca, Romania</p>
+                    <p class="bio" id="bio-anca">Anca Jager is a distinguished pulmonologist based in Cluj-Napoca, Romania. Her work focuses on advanced diagnostic methods for lung diseases. She is affiliated with the Iuliu Hatieganu University of Medicine and Pharmacy.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-antonia">
+                    <img src="images/antonia-harangus.jpg" alt="Antonia Harangus">
+                    <p>Antonia Harangus<br>Cluj-Napoca, Romania</p>
+                    <p class
+="bio" id="bio-antonia">Antonia Harangus is a pulmonologist from Cluj-Napoca, Romania, specializing in the treatment of chronic obstructive pulmonary disease. She is affiliated with the Iuliu Hatieganu University of Medicine and Pharmacy.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-petronela">
+                    <img src="images/petronela-fildan.jpg" alt="Petronela Fildan">
+                    <p>Petronela Fildan<br>Constanta, Romania</p>
+                    <p class="bio" id="bio-petronela">Petronela Fildan is a prominent pulmonologist based in Constanta, Romania. Her expertise includes innovative treatments for lung diseases. She is affiliated with Ovidius University of Constanta.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-bogdan">
+                    <img src="images/bogdan-mincu.jpg" alt="Bogdan Mincu">
+                    <p>Bogdan Mincu<br>Cluj-Napoca, Romania</p>
+                    <p class="bio" id="bio-bogdan">Bogdan Mincu is a well-respected pulmonologist from Cluj-Napoca, Romania. His research focuses on the early detection of obstructive lung diseases. He is affiliated with the Iuliu Hatieganu University of Medicine and Pharmacy.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-marius">
+                    <img src="images/marius-balint-gib.jpg" alt="Marius Balint-Gib">
+                    <p>Marius Balint-Gib<br>Timisoara, Romania</p>
+                    <p class="bio" id="bio-marius">Marius Balint-Gib is a pulmonologist based in Timisoara, Romania. He is known for his contributions to respiratory medicine and is affiliated with the Victor Babes University of Medicine and Pharmacy.</p>
+                </div>
+            </div>
         </div>
     </section>
+
+    <script>
+        document.querySelectorAll('.speaker').forEach(speaker => {
+            speaker.addEventListener('click', () => {
+                const bioId = speaker.getAttribute('data-bio');
+                document.querySelectorAll('.bio').forEach(bio => bio.style.display = 'none');
+                document.getElementById(bioId).style.display = 'block';
+            });
+        });
+    </script>
 </body>
 </html>
