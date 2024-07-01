@@ -7,18 +7,61 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <style>
-        .speaker {
-            text-align: center;
-            margin-bottom: 30px;
+        /* Include the new CSS styles here */
+        /* Header styles */
+        section h2 {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #2A2A32; /* Dark Blue */
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            display: inline-block;
         }
+
+        section h2::after {
+            content: '';
+            width: 50px;
+            height: 5px;
+            background-color: #FFD700; /* Gold */
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        section h3 {
+            font-size: 2em;
+            font-weight: 700;
+            color: #2A2A32; /* Dark Blue */
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .speaker p {
+            margin: 10px 0;
+        }
+
         .speaker img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
+            border: 3px solid #2A2A32; /* Dark Blue border */
+            transition: transform 0.3s;
         }
+
+        .speaker img:hover {
+            transform: scale(1.1);
+        }
+
         .bio {
             display: none;
+            font-size: 1em;
+            margin-top: 10px;
+            color: #2A2A32;
         }
     </style>
 </head>
@@ -78,8 +121,7 @@
                     <img src="images/radu-crisan-dabija.jpg" alt="Radu Crisan Dabija">
                     <p>Radu Crisan Dabija<br>Iasi, Romania</p>
                     <p class="bio" id="bio-radu">Radu Crisan Dabija is a leading pulmonologist from Iasi, Romania, specializing in the treatment of chronic obstructive pulmonary disease. He is affiliated with the Grigore T. Popa University of Medicine and Pharmacy.</p>
-                </div>
-                <div class="col-md-4 speaker" data-bio="bio-cristi">
+                </                <div class="col-md-4 speaker" data-bio="bio-cristi">
                     <img src="images/cristi-oancea.jpg" alt="Cristi Oancea">
                     <p>Cristi Oancea<br>Timisoara, Romania</p>
                     <p class="bio" id="bio-cristi">Cristi Oancea is a renowned pulmonologist based in Timisoara, Romania. He is known for his research in respiratory medicine and is affiliated with the Victor Babes University of Medicine and Pharmacy.</p>
@@ -107,8 +149,7 @@
                 <div class="col-md-4 speaker" data-bio="bio-antonia">
                     <img src="images/antonia-harangus.jpg" alt="Antonia Harangus">
                     <p>Antonia Harangus<br>Cluj-Napoca, Romania</p>
-                    <p class
-="bio" id="bio-antonia">Antonia Harangus is a pulmonologist from Cluj-Napoca, Romania, specializing in the treatment of chronic obstructive pulmonary disease. She is affiliated with the Iuliu Hatieganu University of Medicine and Pharmacy.</p>
+                    <p class="bio" id="bio-antonia">Antonia Harangus is a pulmonologist from Cluj-Napoca, Romania, specializing in the treatment of chronic obstructive pulmonary disease. She is affiliated with the Iuliu Hatieganu University of Medicine and Pharmacy.</p>
                 </div>
                 <div class="col-md-4 speaker" data-bio="bio-petronela">
                     <img src="images/petronela-fildan.jpg" alt="Petronela Fildan">
@@ -140,3 +181,4 @@
     </script>
 </body>
 </html>
+
