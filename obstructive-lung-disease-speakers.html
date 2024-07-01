@@ -40,8 +40,9 @@
             letter-spacing: 1px;
         }
 
-        .speaker p {
-            margin: 10px 0;
+        .speaker {
+            text-align: center;
+            margin-bottom: 30px;
         }
 
         .speaker img {
@@ -57,6 +58,10 @@
             transform: scale(1.1);
         }
 
+        .speaker p {
+            margin: 10px 0;
+        }
+
         .bio {
             display: none;
             font-size: 1em;
@@ -66,6 +71,11 @@
     </style>
 </head>
 <body>
+    <!-- Home Button -->
+    <div class="container my-3 text-right">
+        <a href="index.html" class="btn btn-primary">Home</a>
+    </div>
+
     <section class="speakers py-5" id="obstructive-lung-disease-speakers">
         <div class="container text-center">
             <h2>Obstructive Lung Disease Speakers</h2>
@@ -121,7 +131,8 @@
                     <img src="images/radu-crisan-dabija.jpg" alt="Radu Crisan Dabija">
                     <p>Radu Crisan Dabija<br>Iasi, Romania</p>
                     <p class="bio" id="bio-radu">Radu Crisan Dabija is a leading pulmonologist from Iasi, Romania, specializing in the treatment of chronic obstructive pulmonary disease. He is affiliated with the Grigore T. Popa University of Medicine and Pharmacy.</p>
-                </                <div class="col-md-4 speaker" data-bio="bio-cristi">
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-cristi">
                     <img src="images/cristi-oancea.jpg" alt="Cristi Oancea">
                     <p>Cristi Oancea<br>Timisoara, Romania</p>
                     <p class="bio" id="bio-cristi">Cristi Oancea is a renowned pulmonologist based in Timisoara, Romania. He is known for his research in respiratory medicine and is affiliated with the Victor Babes University of Medicine and Pharmacy.</p>
@@ -134,7 +145,8 @@
                 <div class="col-md-4 speaker" data-bio="bio-corina">
                     <img src="images/corina-budin.jpg" alt="Corina Budin">
                     <p>Corina Budin<br>Tirgu Mures, Romania</p>
-                    <p class="bio" id="bio-corina">Corina Budin is a leading pulmonologist in Tirgu Mures, Romania, with a focus on innovative treatments for lung diseases. She is affiliated with the University of Medicine, Pharmacy, Science and Technology of Targu Mures.</p>
+                    <p class="bio" id="bio-corina">Corina Budin is a leading pulmonologist in Tirgu Mures, Romania, with a focus
+on innovative treatments for lung diseases. She is affiliated with the University of Medicine, Pharmacy, Science and Technology of Targu Mures.</p>
                 </div>
                 <div class="col-md-4 speaker" data-bio="bio-ciprian">
                     <img src="images/ciprian-sturz.jpg" alt="Ciprian Sturz">
@@ -181,4 +193,3 @@
     </script>
 </body>
 </html>
-
