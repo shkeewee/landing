@@ -6,14 +6,204 @@
     <title>Sleep Medicine Speakers - Breathe and Dream Conference</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Header styles */
+        section h2 {
+            font-size: 2.5em;
+            font-weight: 700;
+            color: #2A2A32; /* Dark Blue */
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            display: inline-block;
+        }
+
+        section h2::after {
+            content: '';
+            width: 50px;
+            height: 5px;
+            background-color: #FFD700; /* Gold */
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        section h3 {
+            font-size: 2em;
+            font-weight: 700;
+            color: #2A2A32; /* Dark Blue */
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .speaker {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .speaker img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #2A2A32; /* Dark Blue border */
+            transition: transform 0.3s;
+        }
+
+        .speaker img:hover {
+            transform: scale(1.1);
+        }
+
+        .speaker p {
+            margin: 10px 0;
+        }
+
+        .bio {
+            display: none;
+            font-size: 1em;
+            margin-top: 10px;
+            color: #2A2A32;
+        }
+    </style>
 </head>
 <body>
+    <!-- Home Button -->
+    <div class="container my-3 text-right">
+        <a href="index.html" class="btn btn-primary">Home</a>
+    </div>
+
     <section class="speakers py-5" id="sleep-medicine-speakers">
         <div class="container text-center">
             <h2>Sleep Medicine Speakers</h2>
             <p>Meet the leading experts in sleep medicine who will be speaking at our conference.</p>
-            <!-- Add speaker details here -->
+
+            <h3>International Speakers</h3>
+            <div class="row">
+                <div class="col-md-4 speaker" data-bio="bio-silke">
+                    <img src="images/silke-ryan.jpg" alt="Silke Ryan">
+                    <p>Silke Ryan<br>ERS President, Ireland</p>
+                    <p class="bio" id="bio-silke">Silke Ryan is the President of the European Respiratory Society from Ireland. Her research focuses on sleep-disordered breathing and respiratory failure.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-erna">
+                    <img src="images/erna-sif-arnardottir.jpg" alt="Erna Sif Arnardottir">
+                    <p>Erna Sif Arnardottir<br>Biologist, ESRS President, Iceland</p>
+                    <p class="bio" id="bio-erna">Erna Sif Arnardottir is a biologist and the President of the European Sleep Research Society from Iceland. She specializes in sleep apnea and circadian rhythm disorders.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-ysbrand">
+                    <img src="images/ysbrand-van-de-werf.jpg" alt="Ysbrand van de Werf">
+                    <p>Ysbrand van de Werf<br>Neurobiologist, ESRS VP, Netherlands</p>
+                    <p class="bio" id="bio-ysbrand">Ysbrand van de Werf is a neurobiologist and Vice President of the European Sleep Research Society from Amsterdam, Netherlands. His work focuses on sleep and cognitive functions.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-barbara">
+                    <img src="images/barbara-gnidovec-strazisar.jpg" alt="Barbara Gnidovec Strazisar">
+                    <p>Barbara Gnidovec Strazisar<br>Neuro Pediatrician, Slovenia</p>
+                    <p class="bio" id="bio-barbara">Barbara Gnidovec Strazisar is a neuro pediatrician from Ljubljana, Slovenia. She is known for her work on sleep disorders in children and adolescents.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-peter">
+                    <img src="images/peter-young.jpg" alt="Peter Young">
+                    <p>Peter Young<br>Neurologist, Germany</p>
+                    <p class="bio" id="bio-peter">Peter Young is a neurologist from Munich, Germany, specializing in sleep medicine and neurology. His research includes sleep disorders and neurophysiology.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-samson">
+                    <img src="images/samson-khachatryan.jpg" alt="Samson Khachatryan">
+                    <p>Samson Khachatryan<br>Neurologist, Armenia</p>
+                    <p class="bio" id="bio-samson">Samson Khachatryan is a neurologist from Yerevan, Armenia, with expertise in sleep medicine. His work focuses on sleep disorders and neurological diseases.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-mihaela">
+                    <img src="images/mihaela-theodorescu.jpg" alt="Mihaela Theodorescu">
+                    <p>Mihaela Theodorescu<br>Pneumologist, USA</p>
+                    <p class="bio" id="bio-mihaela">Mihaela Theodorescu is a pneumologist from the USA and an editor for the ATS Blue Journal. She specializes in sleep-related breathing disorders.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-kelvin">
+                    <img src="images/kelvin-lau.jpg" alt="Kelvin Lau">
+                    <p>Kelvin Lau<br>Thoracic Surgeon, UK</p>
+                    <p class="bio" id="bio-kelvin">Kelvin Lau is a thoracic surgeon from London, UK, specializing in robotic surgery for thoracic conditions. He also focuses on sleep apnea treatments.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-morten">
+                    <img src="images/morten-engstrom.jpg" alt="Morten Engstrom">
+                    <p>Morten Engstrom<br>Neurophysiologist, Norway</p>
+                    <p class="bio" id="bio-morten">Morten Engstrom is a neurophysiologist from Trondheim, Norway. His research includes the neurophysiological aspects of sleep disorders.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-kiril">
+                    <img src="images/kiril-terziski.jpg" alt="Kiril Terziski">
+                    <p>Kiril Terziski<br>Respiratory Physiologist, Bulgaria</p>
+                    <p class="bio" id="bio-kiril">Kiril Terziski is a respiratory physiologist from Pleven, Bulgaria. His work focuses on respiratory diseases and sleep-related breathing disorders.</p>
+                </div>
+            </div>
+
+            <h3>Romanian Speakers</h3>
+            <div class="row">
+                <div class="col-md-4 speaker" data-bio="bio-valentin">
+                    <img src="images/valentin-cosei.jpg" alt="Valentin Cosei">
+                    <p>Valentin Cosei<br>Bucharest, Romania</p>
+                    <p class="bio" id="bio-valentin">Valentin Cosei is a prominent sleep medicine specialist from Bucharest, Romania. His research focuses on sleep apnea and insomnia treatments.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-corina">
+                    <img src="images/corina-borcea.jpg" alt="Corina Borcea">
+                    <p>Corina Borcea<br>Bucharest, Romania</p>
+                    <p class="bio" id="bio-corina">Corina Borcea is a respected sleep medicine expert from Bucharest, Romania. Her work includes diagnosing and treating various sleep disorders.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-razvan">
+                    <img src="images/razvan-lungu.jpg" alt="Razvan Lungu">
+                    <p>Razvan Lungu<br>Bucharest
+, Romania</p>
+                    <p class="bio" id="bio-razvan">Razvan Lungu is a dedicated sleep medicine specialist based in Bucharest, Romania. His research interests include sleep apnea and restless legs syndrome.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-daniela">
+                    <img src="images/daniela-boisteanu.jpg" alt="Daniela Boisteanu">
+                    <p>Daniela Boisteanu<br>Iasi, Romania</p>
+                    <p class="bio" id="bio-daniela">Daniela Boisteanu is a renowned sleep medicine physician from Iasi, Romania. She focuses on diagnosing and treating sleep-related breathing disorders.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-mihaltan">
+                    <img src="images/prof-mihaltan.jpg" alt="Prof Mihaltan">
+                    <p>Prof Mihaltan<br>Bucharest, Romania</p>
+                    <p class="bio" id="bio-mihaltan">Prof Mihaltan is a leading expert in sleep medicine from Bucharest, Romania. He is known for his extensive research on sleep apnea and chronic respiratory diseases.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-elena">
+                    <img src="images/elena-mitrofan.jpg" alt="Elena Mitrofan">
+                    <p>Elena Mitrofan<br>Iasi, Romania</p>
+                    <p class="bio" id="bio-elena">Elena Mitrofan is a sleep medicine specialist from Iasi, Romania. Her work includes the treatment of insomnia and other sleep disorders.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-stefan">
+                    <img src="images/stefan-mihaicuta.jpg" alt="Stefan Mihaicuta">
+                    <p>Stefan Mihaicuta<br>Timisoara, Romania</p>
+                    <p class="bio" id="bio-stefan">Stefan Mihaicuta is a distinguished sleep medicine expert from Timisoara, Romania. His research focuses on sleep apnea and its cardiovascular impacts.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-natalia">
+                    <img src="images/natalia-patrascu.jpg" alt="Natalia Patrascu">
+                    <p>Natalia Patrascu<br>Cardiologist, Bucharest, Romania</p>
+                    <p class="bio" id="bio-natalia">Natalia Patrascu is a cardiologist from Bucharest, Romania, specializing in the intersection of cardiology and sleep medicine. She focuses on sleep apnea and its effects on heart health.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-silviu">
+                    <img src="images/silviu-albu.jpg" alt="Silviu Albu">
+                    <p>Silviu Albu<br>ENT Specialist, Bucharest, Romania</p>
+                    <p class="bio" id="bio-silviu">Silviu Albu is an ENT specialist from Bucharest, Romania, with expertise in sleep-related breathing disorders. His work includes surgical treatments for obstructive sleep apnea.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-oana">
+                    <img src="images/oana-claudia-deleanu.jpg" alt="Oana Claudia Deleanu">
+                    <p>Oana Claudia Deleanu<br>Bucharest, Romania</p>
+                    <p class="bio" id="bio-oana">Oana Claudia Deleanu is a respected sleep medicine specialist based in Bucharest, Romania. Her research focuses on improving diagnostic techniques for sleep disorders.</p>
+                </div>
+                <div class="col-md-4 speaker" data-bio="bio-doina">
+                    <img src="images/doina-dumitru-didita.jpg" alt="Doina Dumitru Didita">
+                    <p>Doina Dumitru Didita<br>Bucharest, Romania</p>
+                    <p class="bio" id="bio-doina">Doina Dumitru Didita is a dedicated sleep medicine physician from Bucharest, Romania. She specializes in treating insomnia and other sleep disorders.</p>
+                </div>
+            </div>
         </div>
     </section>
+
+    <script>
+        document.querySelectorAll('.speaker').forEach(speaker => {
+            speaker.addEventListener('click', () => {
+                const bioId = speaker.getAttribute('data-bio');
+                document.querySelectorAll('.bio').forEach(bio => bio.style.display = 'none');
+                document.getElementById(bioId).style.display = 'block';
+            });
+        });
+    </script>
 </body>
 </html>
