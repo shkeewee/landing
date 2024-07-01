@@ -1,4 +1,3 @@
-/* Existing CSS */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
@@ -65,68 +64,62 @@ section {
 
 section h2 {
     font-size: 2.5em;
+    font-weight: 700;
+    color: #2A2A32; /* Dark Blue */
     margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+section h2::after {
+    content: '';
+    width: 50px;
+    height: 5px;
+    background-color: #FFD700; /* Gold */
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section h3 {
+    font-size: 2em;
+    font-weight: 700;
     color: #2A2A32; /* Dark Blue */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-section p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #2A2A32; /* Dark Blue */
-}
-
-.registration {
-    background-color: #FFFFFF; /* White */
-}
-
-.registration-box {
-    border: 1px solid #2A2A32; /* Dark Blue border */
-    padding: 20px;
-    margin: 10px;
-    border-radius: 10px;
-    background-color: #F8F8F8; /* Light Gray */
-}
-
-.registration .btn {
-    margin-top: 20px;
-    background-color: #2A2A32; /* Dark Blue */
-    color: #FFFFFF; /* White */
-    border: none;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.registration .btn:hover {
-    background-color: #00AEEF; /* Light Blue */
-    color: #2A2A32; /* Dark Blue */
-}
-
-.registration-form {
-    background-color: #F0F0F0; /* Light Gray */
-}
-
-.registration-form .form-control {
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-
-.registration-form .btn {
-    margin-top: 20px;
-    background-color: #2A2A32; /* Dark Blue */
-    color: #FFFFFF; /* White */
-    border: none;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.registration-form .btn:hover {
-    background-color: #00AEEF; /* Light Blue */
-    color: #2A2A32; /* Dark Blue */
-}
-
-footer {
-    background-color: #2A2A32; /* Dark Blue */
-    color: #FFFFFF; /* White */
-    padding: 20px 0;
+.speaker {
     text-align: center;
+    margin-bottom: 30px;
+}
+
+.speaker img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2A2A32; /* Dark Blue border */
+    transition: transform 0.3s;
+}
+
+.speaker img:hover {
+    transform: scale(1.1);
+}
+
+.speaker p {
+    margin: 10px 0;
+}
+
+.bio {
+    display: none;
+    font-size: 1em;
+    margin-top: 10px;
+    color: #2A2A32;
 }
 
 /* Responsive styles */
