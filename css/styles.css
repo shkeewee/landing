@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #2A2A32; /* Dark Blue */
+    background-color: #F0F0F0; /* Light Gray */
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    background: url('../images/hero-bg.jpg') no-repeat center center/cover;
+    color: #FFFFFF; /* White */
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    align-items: center;
+}
+
+.hero .container {
+    max-width: 50%; /* Limit text width to half the screen */
+    text-align: right; /* Justify text to the right */
+    margin-right: 50px; /* Add margin to the right */
+}
+
+.hero h1 {
+    font-size: 3.9em; /* Increased by 30% */
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 2.6em; /* Added subtitle with appropriate size */
+    margin-bottom: 20px;
+    font-weight: 400; /* Slightly less bold for subtitle */
+}
+
+.hero .lead {
+    color: #FFD700; /* Gold for better contrast */
+    font-size: 1.95em; /* Increased by 30% */
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    background-color: #00AEEF; /* Light Blue */
+    color: #FFFFFF; /* White */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.56em; /* Increased by 30% */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #FFFFFF; /* White */
+    color: #2A2A32; /* Dark Blue */
+}
+
+.countdown {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2A2A32; /* Dark Blue */
+}
+
+section p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #2A2A32; /* Dark Blue */
+}
+
+.registration {
+    background-color: #FFFFFF; /* White */
+}
+
+.registration-box {
+    border: 1px solid #2A2A32; /* Dark Blue border */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #F8F8F8; /* Light Gray */
+}
+
+.registration .btn {
+    margin-top: 20px;
+    background-color: #2A2A32; /* Dark Blue */
+    color: #FFFFFF; /* White */
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.registration .btn:hover {
+    background-color: #00AEEF; /* Light Blue */
+    color: #2A2A32; /* Dark Blue */
+}
+
+.registration-form {
+    background-color: #F0F0F0; /* Light Gray */
+}
+
+.registration-form .form-control {
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.registration-form .btn {
+    margin-top: 20px;
+    background-color: #2A2A32; /* Dark Blue */
+    color: #FFFFFF; /* White */
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.registration-form .btn:hover {
+    background-color: #00AEEF; /* Light Blue */
+    color: #2A2A32; /* Dark Blue */
+}
+
+footer {
+    background-color: #2A2A32; /* Dark Blue */
+    color: #FFFFFF; /* White */
+    padding: 20px 0;
+    text-align: center;
+}
