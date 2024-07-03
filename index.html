@@ -1,101 +1,200 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breathe and Dream Conference</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    <!-- Split-Screen Hero Section -->
-    <section class="hero">
-        <div class="split left">
-            <div class="container">
-                <h1 class="display-4">BREATHE</h1>
-                <p class="lead">throughout the day</p>
-                <a href="#day-theme" class="btn btn-primary">Explore Day</a>
-            </div>
-        </div>
-        <div class="split middle">
-            <div class="container">
-                <h1 class="display-4">AND</h1>
-            </div>
-        </div>
-        <div class="split right">
-            <div class="container">
-                <h1 class="display-4">DREAM</h1>
-                <p class="lead">throughout the night</p>
-                <a href="#night-theme" class="btn btn-primary">Explore Night</a>
-            </div>
-        </div>
-    </section>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-    <!-- About the Event Section -->
-    <section class="about py-5" id="about">
-        <div class="container text-center">
-            <h2>About the Event</h2>
-            <p>Welcome to the Breathe and Dream Conference...</p>
-        </div>
-    </section>
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #2A2A32; /* Dark Blue */
+    background-color: #F0F0F0; /* Light Gray */
+    margin: 0;
+    padding: 0;
+}
 
-    <!-- Day Theme Section -->
-    <section class="theme-day py-5" id="day-theme">
-        <div class="container text-center">
-            <h2>Obstructive Lung Diseases (Day Theme)</h2>
-            <p>Information about the day theme...</p>
-            <!-- Include content specific to the day theme -->
-        </div>
-    </section>
+.hero {
+    display: flex;
+    height: 100vh;
+}
 
-    <!-- Night Theme Section -->
-    <section class="theme-night py-5" id="night-theme">
-        <div class="container text-center">
-            <h2>Sleep Medicine (Night Theme)</h2>
-            <p>Information about the night theme...</p>
-            <!-- Include content specific to the night theme -->
-        </div>
-    </section>
+.split {
+    width: 33.33%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    <!-- Registration Section -->
-    <section class="registration py-5" id="registration">
-        <div class="container text-center">
-            <h2>Registration</h2>
-            <p>Secure your spot at the Breathe and Dream Conference today!</p>
-            <a href="#registration-form" class="btn btn-primary mt-4">Register Now</a>
-        </div>
-    </section>
+.split.left {
+    background-color: #FFD700; /* Gold representing Day */
+    color: #2A2A32; /* Dark Blue for text */
+}
 
-    <!-- Registration Form -->
-    <section class="registration-form py-5" id="registration-form">
-        <div class="container text-center">
-            <h2>Register Now</h2>
-            <form>
-                <!-- Form content -->
-            </form>
-        </div>
-    </section>
+.split.middle {
+    background-color: #2A2A32; /* Dark Blue */
+    color: #FFD700; /* Gold for text */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
-    <!-- Contact Section -->
-    <section class="contact py-5" id="contact">
-        <div class="container text-center">
-            <h2>Contact</h2>
-            <p>Email us at <a href="mailto:info@breatheanddreamconference.com">info@breatheanddreamconference.com</a> or call us at +123-456-7890.</p>
-        </div>
-    </section>
+.split.right {
+    background-color: #1a1a2e; /* Dark Blue representing Night */
+    color: #FFFFFF; /* White for text */
+}
 
-    <!-- Footer -->
-    <footer class="py-3 text-center">
-        <div class="container">
-            <p>&copy; 2024 Breathe and Dream Conference. All rights reserved.</p>
-        </div>
-    </footer>
+.split .container {
+    text-align: center;
+}
 
-    <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://
-code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
-</html>
+.hero .btn-day {
+    background-color: #FFD700 !important; /* Gold */
+    color: #2A2A32 !important; /* Dark Blue */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.56em;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
+}
+
+.hero .btn-day:hover {
+    background-color: #2A2A32 !important; /* Dark Blue */
+    color: #FFD700 !important; /* Gold */
+}
+
+.hero .btn-night {
+    background-color: #1a1a2e !important; /* Dark Blue */
+    color: #FFFFFF !important; /* White */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.56em;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
+}
+
+.hero .btn-night:hover {
+    background-color: #FFFFFF !important; /* White */
+    color: #1a1a2e !important; /* Dark Blue */
+}
+
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #2A2A32; /* Dark Blue */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+}
+
+section h2::after {
+    content: '';
+    width: 50px;
+    height: 5px;
+    background-color: #FFD700; /* Gold */
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section h3 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #2A2A32; /* Dark Blue */
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.theme-day {
+    background-color: #fff4e6; /* Light day theme color */
+}
+
+.theme-night {
+    background-color: #1a1a2e; /* Dark night theme color */
+    color: #fff; /* White text for night theme */
+}
+
+.speaker {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.speaker img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2A2A32; /* Dark Blue border */
+    transition: transform 0.3s;
+}
+
+.speaker img:hover {
+    transform: scale(1.1);
+}
+
+.speaker p {
+    margin: 10px 0;
+}
+
+.bio {
+    display: none;
+    font-size: 1em;
+    margin-top: 10px;
+    color: #2A2A32;
+}
+
+.btn-primary,
+.registration .btn,
+.registration-form .btn,
+.contact .btn {
+    background-color: #FFD700 !important; /* Gold */
+    color: #2A2A32 !important; /* Dark Blue */
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary:hover,
+.registration .btn:hover,
+.registration-form .btn:hover,
+.contact .btn:hover {
+    background-color: #2A2A32 !important; /* Dark Blue */
+    color: #FFD700 !important; /* Gold */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+    }
+    
+    .split {
+        width: 100%;
+        height: 33.33%;
+    }
+
+    .hero .container {
+        max-width: 100%; /* Full width for small screens */
+        text-align: center; /* Center text on small screens */
+    }
+
+    .hero h1 {
+        font-size: 2.5em; /* Adjust font size for small screens */
+    }
+
+    .hero .lead {
+        font-size: 1.2em; /* Adjust font size for small screens */
+    }
+
+    .hero .btn {
+        font-size: 1em; /* Adjust font size for small screens */
+        padding: 8px 16px; /* Adjust padding for small screens */
+    }
+
+    .countdown {
+        font-size: 1.5em; /* Adjust countdown size for small screens */
+    }
+}
