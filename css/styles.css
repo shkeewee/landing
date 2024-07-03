@@ -10,8 +10,7 @@ body {
 
 .hero {
     display: flex;
-    height: 50vh; /* Adjusted height for the hero section */
-    margin-bottom: 0; /* Remove bottom margin */
+    height: 40vh; /* Adjusted height for the hero section */
 }
 
 .hero-left,
@@ -63,7 +62,7 @@ body {
 }
 
 section {
-    padding: 60px 0;
+    padding: 30px 0; /* Reduced padding for sections */
 }
 
 section h2 {
@@ -161,7 +160,7 @@ section h3 {
     
     .hero-left, .hero-right {
         width: 100%;
-        height: 25vh; /* Adjusted height for small screens */
+        height: 20vh; /* Adjusted height for small screens */
     }
 
     .hero .container {
@@ -178,4 +177,11 @@ section h3 {
     }
 
     .hero .btn {
-        font-size: 1em; /*
+        font-size: 1em; /* Adjust font size for small screens */
+        padding: 8px 16px; /* Adjust padding for small screens */
+    }
+
+    .countdown {
+        font-size: 1.5em; /* Adjust countdown size for small screens */
+    }
+}
