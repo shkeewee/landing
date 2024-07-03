@@ -17,37 +17,30 @@ body {
     width: 33.33%;
     position: relative;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .split.left {
-    background: linear-gradient(to right, #FFD700 50%, #1a1a2e 50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #2A2A32;
+    background-color: #FFD700; /* Gold representing Day */
+    color: #2A2A32; /* Dark Blue for text */
 }
 
 .split.middle {
-    display: flex;
+    background-color: #2A2A32; /* Dark Blue */
+    color: #FFD700; /* Gold for text */
     justify-content: center;
     align-items: center;
-    background-color: #2A2A32; /* Dark Blue */
-    color: #FFD700; /* Gold */
+    text-align: center;
 }
 
 .split.right {
-    background: linear-gradient(to left, #1a1a2e 50%, #FFD700 50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #FFFFFF;
+    background-color: #1a1a2e; /* Dark Blue representing Night */
+    color: #FFFFFF; /* White for text */
 }
 
 .split .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     text-align: center;
 }
 
@@ -58,6 +51,7 @@ body {
     padding: 10px 20px;
     font-size: 1.56em;
     transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
 }
 
 .hero .btn:hover {
