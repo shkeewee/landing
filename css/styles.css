@@ -44,7 +44,7 @@ body {
     text-align: center;
 }
 
-.hero .btn {
+.hero .btn-day {
     background-color: #FFD700 !important; /* Gold */
     color: #2A2A32 !important; /* Dark Blue */
     border: none;
@@ -54,9 +54,24 @@ body {
     margin-top: 10px;
 }
 
-.hero .btn:hover {
+.hero .btn-day:hover {
     background-color: #2A2A32 !important; /* Dark Blue */
     color: #FFD700 !important; /* Gold */
+}
+
+.hero .btn-night {
+    background-color: #1a1a2e !important; /* Dark Blue */
+    color: #FFFFFF !important; /* White */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.56em;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
+}
+
+.hero .btn-night:hover {
+    background-color: #FFFFFF !important; /* White */
+    color: #1a1a2e !important; /* Dark Blue */
 }
 
 section {
