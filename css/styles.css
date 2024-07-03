@@ -9,17 +9,18 @@ body {
 }
 
 .hero {
-    display: flex;
     height: 100vh;
+    display: flex;
 }
 
 .hero-left,
 .hero-right {
-    width: 50%;
+    flex: 1;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
 }
 
 .hero-left {
