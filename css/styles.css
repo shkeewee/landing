@@ -9,61 +9,47 @@ body {
 }
 
 .hero {
-    background: url('../images/hero-bg.jpg') no-repeat center center;
-    background-size: cover;
-    color: #FFFFFF; /* White */
-    position: relative;
-    height: 100vh; /* Full viewport height */
     display: flex;
-    justify-content: flex-end; /* Align items to the right */
-    align-items: center;
-    padding: 0 20px; /* Padding for small screens */
+    height: 100vh;
 }
 
-.hero .container {
-    max-width: 50%; /* Limit text width to half the screen */
-    text-align: right; /* Justify text to the right */
-    margin-right: 50px; /* Add margin to the right */
+.split {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
 }
 
-.hero h1 {
-    font-size: 3.9em; /* Increased by 30% */
-    margin-bottom: 20px;
+.split.left {
+    background: url('../images/day-theme.jpg') no-repeat center center;
+    background-size: cover;
 }
 
-.hero .lead {
-    color: #FFD700; /* Gold for better contrast */
-    font-size: 1.95em; /* Increased by 30% */
-    margin-bottom: 20px;
+.split.right {
+    background: url('../images/night-theme.jpg') no-repeat center center;
+    background-size: cover;
 }
 
-.hero .btn,
-.btn-primary,
-.registration .btn,
-.registration-form .btn,
-.contact .btn {
+.split .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.hero .btn {
     background-color: #FFD700 !important; /* Gold */
     color: #2A2A32 !important; /* Dark Blue */
     border: none;
     padding: 10px 20px;
-    font-size: 1.56em; /* Increased by 30% */
+    font-size: 1.56em;
     transition: background-color 0.3s, color 0.3s;
 }
 
-.hero .btn:hover,
-.btn-primary:hover,
-.registration .btn:hover,
-.registration-form .btn:hover,
-.contact .btn:hover {
+.hero .btn:hover {
     background-color: #2A2A32 !important; /* Dark Blue */
     color: #FFD700 !important; /* Gold */
-}
-
-.countdown {
-    font-size: 2em; /* Increased size */
-    color: #FFD700; /* Gold color for better contrast */
-    margin-top: 20px;
-    font-weight: bold;
 }
 
 section {
@@ -101,6 +87,15 @@ section h3 {
     letter-spacing: 1px;
 }
 
+.theme-day {
+    background-color: #fff4e6; /* Light day theme color */
+}
+
+.theme-night {
+    background-color: #1a1a2e; /* Dark night theme color */
+    color: #fff; /* White text for night theme */
+}
+
 .speaker {
     text-align: center;
     margin-bottom: 30px;
@@ -130,6 +125,24 @@ section h3 {
     color: #2A2A32;
 }
 
+.btn-primary,
+.registration .btn,
+.registration-form .btn,
+.contact .btn {
+    background-color: #FFD700 !important; /* Gold */
+    color: #2A2A32 !important; /* Dark Blue */
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-primary:hover,
+.registration .btn:hover,
+.registration-form .btn:hover,
+.contact .btn:hover {
+    background-color: #2A2A32 !important; /* Dark Blue */
+    color: #FFD700 !important; /* Gold */
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .hero .container {
@@ -146,6 +159,7 @@ section h3 {
         font-size: 1.2em; /* Adjust font size for small screens */
     }
 
+   
     .hero .btn {
         font-size: 1em; /* Adjust font size for small screens */
         padding: 8px 16px; /* Adjust padding for small screens */
