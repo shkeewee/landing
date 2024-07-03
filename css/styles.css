@@ -13,47 +13,51 @@ body {
     height: 100vh;
 }
 
-.hero-left {
-    background-color: #FFD700; /* Gold representing Day */
-    color: #2A2A32; /* Dark Blue for text */
+.hero-left,
+.hero-right {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.hero-left {
+    background-color: #FFD700; /* Gold representing Day */
+    color: #2A2A32; /* Dark Blue for text */
 }
 
 .hero-right {
     background-color: #1a1a2e; /* Dark Blue representing Night */
     color: #FFFFFF; /* White for text */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .hero .btn {
-    background-color: #FFD700 !important; /* Gold for day button */
-    color: #2A2A32 !important; /* Dark Blue for text */
-    border: none;
     padding: 10px 20px;
     font-size: 1.56em;
-    transition: background-color 0.3s, color 0.3s;
+    border: none;
     margin-top: 10px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.hero .btn:hover {
-    background-color: #2A2A32 !important; /* Dark Blue for button hover */
-    color: #FFD700 !important; /* Gold for text hover */
+.hero-left .btn {
+    background-color: #2A2A32; /* Dark Blue for day button */
+    color: #FFD700; /* Gold for text */
+}
+
+.hero-left .btn:hover {
+    background-color: #FFD700; /* Gold for button hover */
+    color: #2A2A32; /* Dark Blue for text hover */
 }
 
 .hero-right .btn {
-    background-color: #1a1a2e !important; /* Dark Blue for night button */
-    color: #FFFFFF !important; /* White for text */
+    background-color: #FFFFFF; /* White for night button */
+    color: #1a1a2e; /* Dark Blue for text */
 }
 
 .hero-right .btn:hover {
-    background-color: #FFFFFF !important; /* White for button hover */
-    color: #1a1a2e !important; /* Dark Blue for text hover */
+    background-color: #1a1a2e; /* Dark Blue for button hover */
+    color: #FFFFFF; /* White for text hover */
 }
 
 section {
