@@ -10,19 +10,21 @@
 <body>
     <!-- Hero Section -->
     <section class="hero" id="hero">
-        <div class="row no-gutters">
-            <div class="col-md-6 hero-left d-flex align-items-center justify-content-center">
-                <div class="text-center">
-                    <h1 class="display-4">BREATHE</h1>
-                    <p class="lead">throughout the day</p>
-                    <a href="#mentors-breath" class="btn btn-lg btn-primary hero-btn">Mentors of Breath</a>
+        <div class="container-fluid">
+            <div class="row no-gutters">
+                <div class="col-md-6 hero-left d-flex align-items-center justify-content-center">
+                    <div class="text-center">
+                        <h1 class="display-4">BREATHE</h1>
+                        <p class="lead">throughout the day</p>
+                        <a href="#mentors-breath" class="btn btn-lg btn-primary hero-btn">Mentors of Breath</a>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6 hero-right d-flex align-items-center justify-content-center">
-                <div class="text-center">
-                    <h1 class="display-4">DREAM</h1>
-                    <p class="lead">throughout the night</p>
-                    <a href="#mentors-sleep" class="btn btn-lg btn-primary hero-btn">Mentors of Sleep</a>
+                <div class="col-md-6 hero-right d-flex align-items-center justify-content-center">
+                    <div class="text-center">
+                        <h1 class="display-4">DREAM</h1>
+                        <p class="lead">throughout the night</p>
+                        <a href="#mentors-sleep" class="btn btn-lg btn-primary hero-btn">Mentors of Sleep</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -168,9 +170,10 @@
         // Update the count down every 1 second
         var x = setInterval(function() {
             // Get today's date and time
+            var now
+            // Get today's date and time
             var now = new Date().getTime();
 
-            //
             // Find the distance between now and the count down date
             var distance = countDownDate - now;
 
